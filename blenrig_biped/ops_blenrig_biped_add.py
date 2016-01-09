@@ -16,18 +16,18 @@ class Operator_BlenRig5_Add_Biped(bpy.types.Operator):
     blenrig_action_names = []
     blenrig_lattice_names = []
 
-    from BlenRig5.blenrig_biped.add_bone_shapes import add_shape_objects
-    from BlenRig5.blenrig_biped.add_armature import add_blenrig_armature  
-    from BlenRig5.blenrig_biped.add_data_id_properties import add_data_id_properties  
-    from BlenRig5.blenrig_biped.add_pbones_id_properties import add_pbones_id_properties   
-    from BlenRig5.blenrig_biped.add_armature_groups import add_armature_groups       
-    from BlenRig5.blenrig_biped.add_pbones_properties import add_pbones_properties              
-    from BlenRig5.blenrig_biped.add_armature_actions import add_armature_actions  
-    from BlenRig5.blenrig_biped.add_pbones_constraints import add_pbones_constraints  
-    from BlenRig5.blenrig_biped.add_armature_drivers import add_armature_drivers  
-    from BlenRig5.blenrig_biped.add_lattices import add_lattices  
-    from BlenRig5.blenrig_biped.add_mdef_cage import add_mdef_cage  
-    from BlenRig5.blenrig_biped.add_proxy_model import add_proxy_model  
+    from BlenRig.blenrig_biped.add_bone_shapes import add_shape_objects
+    from BlenRig.blenrig_biped.add_armature import add_blenrig_armature  
+    from BlenRig.blenrig_biped.add_data_id_properties import add_data_id_properties  
+    from BlenRig.blenrig_biped.add_pbones_id_properties import add_pbones_id_properties   
+    from BlenRig.blenrig_biped.add_armature_groups import add_armature_groups       
+    from BlenRig.blenrig_biped.add_pbones_properties import add_pbones_properties              
+    from BlenRig.blenrig_biped.add_armature_actions import add_armature_actions  
+    from BlenRig.blenrig_biped.add_pbones_constraints import add_pbones_constraints  
+    from BlenRig.blenrig_biped.add_armature_drivers import add_armature_drivers  
+    from BlenRig.blenrig_biped.add_lattices import add_lattices  
+    from BlenRig.blenrig_biped.add_mdef_cage import add_mdef_cage  
+    from BlenRig.blenrig_biped.add_proxy_model import add_proxy_model  
 
 ############################ Distribute Objects ############################ 
     

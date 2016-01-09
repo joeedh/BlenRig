@@ -53,7 +53,7 @@ import addon_utils
 addon_utils.enable("space_view3d_copy_attributes", default_set=False, persistent=True, handle_error=None)
 
 ######### Load Rig Functions ##########
-from BlenRig5.rig_functions import (
+from BlenRig.rig_functions import (
     bone_auto_hide, 
     reproportion_toggle,
     rig_toggles,
@@ -728,17 +728,17 @@ bpy.types.PoseBone.toggle_toes_R = BoolProperty(
 ) 
                    
 ####### Load BlenRig 5 Controls Panel
-from BlenRig5.ui_panel_controls import BlenRig_5_Interface
+from BlenRig.ui_panel_controls import BlenRig_5_Interface
 
 ####### Load BlenRig 5 Rigging Panel
-from BlenRig5.ui_panel_rigging import (
+from BlenRig.ui_panel_rigging import (
     BlenRig_5_rigging_panel,
     BlenRig_5_mesh_panel,
     BlenRig_5_lattice_panel
     )
 
 ####### Load BlenRig 5 Bake Operators
-from BlenRig5.ops_baking import (
+from BlenRig.ops_baking import (
     ARMATURE_OT_mesh_pose_baker,
     ARMATURE_OT_reset_hooks,
     ARMATURE_OT_reset_deformers,
@@ -747,7 +747,7 @@ from BlenRig5.ops_baking import (
     )                          
 
 ####### Load BlenRig 5 Alignment Operators
-from BlenRig5.ops_alignment import (
+from BlenRig.ops_alignment import (
     Operator_BlenRig_Fix_Misaligned_Bones,
     Operator_BlenRig_Auto_Bone_Roll,
     Operator_BlenRig_Custom_Bone_Roll,
@@ -757,7 +757,7 @@ from BlenRig5.ops_alignment import (
     )                          
 
 ####### Load BlenRig 5 Snapping Operators
-from BlenRig5.ops_snapping import (
+from BlenRig.ops_snapping import (
     Operator_Torso_Snap_FK_IK, 
     Operator_Torso_Snap_IK_FK, 
     Operator_Head_Snap_FK_IK,
@@ -776,7 +776,7 @@ from BlenRig5.ops_snapping import (
     
 ####### Load BlenRig 5 Body Picker Operators
 # Biped
-from BlenRig5.ops_picker_body import (
+from BlenRig.ops_picker_body import (
     Operator_Head_Stretch,
     Operator_Head_Toon,   
     Operator_Head_Top_Ctrl,  
@@ -996,7 +996,7 @@ from BlenRig5.ops_picker_body import (
     )
     
 #Quadruped
-from BlenRig5.ops_picker_body import (
+from BlenRig.ops_picker_body import (
     Operator_Ankle_Toon_L, 
     Operator_Carpal_FK_L, 
     Operator_Carpal_IK_L,  
@@ -1032,7 +1032,7 @@ from BlenRig5.ops_picker_body import (
     )       
     
 ####### Load BlenRig 5 Face Picker Operators
-from BlenRig5.ops_picker_face import (
+from BlenRig.ops_picker_face import (
     Operator_Ear_Up_R,
     Operator_Ear_R,
     Operator_Ear_Low_R,
@@ -1213,7 +1213,7 @@ from BlenRig5.ops_picker_face import (
     )
   
 ####### Load BlenRig 5 Rig Presets Operators
-from BlenRig5.blenrig_biped.ops_blenrig_biped_add import (
+from BlenRig.blenrig_biped.ops_blenrig_biped_add import (
     Operator_BlenRig5_Add_Biped
     )  
      
