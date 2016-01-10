@@ -1,4 +1,5 @@
 import bpy
+import os
 
 class Operator_BlenRig5_Add_Biped(bpy.types.Operator):    
     
@@ -11,54 +12,52 @@ class Operator_BlenRig5_Add_Biped(bpy.types.Operator):
     @classmethod
     def poll(cls, context):                            #method called by blender to check if the operator can be run
         return bpy.context.scene != None
-    
-    blenrig_armature_name = []
-    blenrig_action_names = []
-    blenrig_lattice_names = []
-
-    from BlenRig.blenrig_biped.add_bone_shapes import add_shape_objects
-    from BlenRig.blenrig_biped.add_armature import add_blenrig_armature  
-    from BlenRig.blenrig_biped.add_data_id_properties import add_data_id_properties  
-    from BlenRig.blenrig_biped.add_pbones_id_properties import add_pbones_id_properties   
-    from BlenRig.blenrig_biped.add_armature_groups import add_armature_groups       
-    from BlenRig.blenrig_biped.add_pbones_properties import add_pbones_properties              
-    from BlenRig.blenrig_biped.add_armature_actions import add_armature_actions  
-    from BlenRig.blenrig_biped.add_pbones_constraints import add_pbones_constraints  
-    from BlenRig.blenrig_biped.add_armature_drivers import add_armature_drivers  
-    from BlenRig.blenrig_biped.add_lattices import add_lattices  
-    from BlenRig.blenrig_biped.add_mdef_cage import add_mdef_cage  
-    from BlenRig.blenrig_biped.add_proxy_model import add_proxy_model  
-
-############################ Distribute Objects ############################ 
-    
-    def distrubute_objects(self, context):
-
-        for ob in bpy.data.objects:
-            for N in self.blenrig_lattice_names:
-                if ob.name == N:
-                    ob.layers = (False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False)
-            for N in self.blenrig_armature_name:
-                if ob.name == N:
-                    ob.layers = (False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False)        
-                    bpy.context.scene.objects.active = ob
-        bpy.context.scene.layers[10] = True
+       
+    def import_blenrig_biped(self, context):
+        opath = "//blenrig_biped.blend\\Group\\blenrig_biped"
+        s = os.sep
+        dpath=''
+        fpath=''
         
-####### Create BlenRig Rig #######        
+        for p in bpy.utils.script_paths():
+            testfname= p + '%saddons%sBlenRig%sblenrig_biped%sblenrig_biped.blend' % (s,s,s,s)
+            print(testfname)
+            if os.path.isfile(testfname):
+                fname=testfname
+                dpath = p + '%saddons%sBlenRig%sblenrig_biped%sblenrig_biped.blend\\Group\\' % (s, s, s, s)
+                break
+        # DEBUG
+        #print('import_object: ' + opath)
+        bpy.ops.wm.append(
+            filepath=opath,
+            filename="blenrig_biped",
+            directory=dpath,
+            filemode=1,
+            link=False,
+            autoselect=True,
+            active_layer=False,
+            instance_groups=False
+            )
+
+    def set_pose(self, context):
+        bpy.context.scene.layers[10] = True  
+        
+        active = []
+        
+        for ob in bpy.context.selected_objects:
+            if ob.type == 'ARMATURE':
+                active[:] = []
+                active.append(ob.name)
+                print (active[:])
+                                
+        bpy.ops.object.select_all(action='DESELECT')
+        
+        for ob in bpy.data.objects:
+            if ob.name in active:
+                bpy.context.scene.objects.active = ob
+                bpy.ops.object.mode_set(mode='POSE')                         
 
     def execute(self, context):
-        self.add_shape_objects(context)
-        self.add_blenrig_armature(context)
-        self.add_data_id_properties(context)
-        self.add_pbones_id_properties(context)
-        self.add_armature_groups(context)
-        self.add_pbones_properties(context)
-        self.add_armature_actions(context)
-        self.add_pbones_constraints(context)
-        self.add_armature_drivers(context)
-        self.add_lattices(context)
-        self.add_mdef_cage(context)
-        self.add_proxy_model(context)
-        self.distrubute_objects(context)
-        
-        return{'FINISHED'}   
-            
+        self.import_blenrig_biped(context)
+        self.set_pose(context)
+        return{'FINISHED'}  
