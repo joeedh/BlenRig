@@ -26,10 +26,6 @@ In the **View3d Tools Panel** you will find all the animation controls. In the *
 
 You can find more information at https://cloud.blender.org/p/blenrig/
 
-Developers note:
-----------------
-
-As for this version, I do not recommend creating more than one BlenRig armature per blend file, as performance problems will arise in the newly created armatures. This only encompasses rig creation. Linking multiple characters into an animation file shouldn't be a problem.
 
 System Requirements for animation:  
 ----------------------------------
