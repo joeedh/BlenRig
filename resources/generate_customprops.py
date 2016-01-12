@@ -307,6 +307,7 @@ def reproportion_toggle(context):
                                 C.mute = True   
                                                    
                 else:
+                    bpy.context.active_object.data.layers[0] = True
                     bpy.context.active_object.data.layers[31] = False   
                     for b in p_bones:     
                         for C in b.constraints:
