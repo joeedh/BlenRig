@@ -7,7 +7,6 @@ class BlenRig_5_rigging_panel(bpy.types.Panel):
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
     bl_context = "data"
-    bl_category = "BlenRig 5"    
 
     @classmethod
     def poll(cls, context):
