@@ -14,17 +14,17 @@ class Operator_BlenRig5_Add_Biped(bpy.types.Operator):
         return bpy.context.scene != None
        
     def import_blenrig_biped(self, context):
-        opath = "//blenrig_biped.blend\\Group\\blenrig_biped"
+        opath =  "//" + os.path.join("blenrig_biped.blend", "Group", "blenrig_biped")
         s = os.sep
         dpath=''
         fpath=''
         
         for p in bpy.utils.script_paths():
-            testfname= p + '%saddons%sBlenRig%sblenrig_biped%sblenrig_biped.blend' % (s,s,s,s)
+            testfname= os.path.join(p, "addons", "BlenRig", "blenrig_biped", "blenrig_biped.blend")
             print(testfname)
             if os.path.isfile(testfname):
                 fname=testfname
-                dpath = p + '%saddons%sBlenRig%sblenrig_biped%sblenrig_biped.blend\\Group\\' % (s, s, s, s)
+                dpath = os.path.join(p, "addons", "BlenRig", "blenrig_biped", "blenrig_biped.blend", "Group")
                 break
         # DEBUG
         #print('import_object: ' + opath)
