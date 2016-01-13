@@ -8,7 +8,7 @@ all_bones = hand_l = hand_r = arm_l = arm_r = leg_l = leg_r = foot_l = foot_r = 
 class BlenRig_5_Interface(bpy.types.Panel):
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'TOOLS'
-    bl_label = 'BlenRig 5 Controls (V 217)'
+    bl_label = 'BlenRig 5 Controls'
     bl_category = "BlenRig 5"
     
     @classmethod

@@ -1,6 +1,6 @@
 import bpy
 
-from BlenRig.ops_picker_body import select_op
+from .ops_picker_body import select_op
 
 ######### FACE PICKER OPERATORS ###########################################
 
