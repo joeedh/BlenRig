@@ -1275,7 +1275,7 @@ class Blenrig_5_Props(bpy.types.PropertyGroup):
     gui_body_auto_move = bpy.props.BoolProperty(default=False, description="Parameters for automated movement")  
     gui_body_rj = bpy.props.BoolProperty(default=False, description="Simulate how bone thickness affects joint rotation")  
     gui_body_toggles = bpy.props.BoolProperty(default=False, description="Toggle body parts")    
-    bake_to_shape = bpy.props.BoolProperty(name="Bake to Shape Key", default=True, description="Bake the mesh into a separate Shape Key")  
+    bake_to_shape = bpy.props.BoolProperty(name="Bake to Shape Key", default=False, description="Bake the mesh into a separate Shape Key")  
     align_selected_only = bpy.props.BoolProperty(name="Selected Bones Only", default=False, description="Perform aligning only on selected bones")               
 
 #BlenRig Armature Tools Operator
