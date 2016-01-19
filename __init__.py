@@ -34,7 +34,7 @@
 bl_info = {
     'name': 'BlenRig 5',
     'author': 'Juan Pablo Bouza',
-    'version': (1,0),
+    'version': (1,001),
     'blender': (2, 76, 0),
     'location': 'Armature, Object and Lattice properties, View3d tools panel, Armature Add menu',
     'description': 'BlenRig 5 rigging system',
