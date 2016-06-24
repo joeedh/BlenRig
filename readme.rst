@@ -11,6 +11,7 @@ BlenRig is an Auto-rigging and skinning system that provides the user of a Featu
 
 The current version only supports Biped characters, but more presets will be supported in the near future.
 
+
 Rig creation includes:
 
 _BlenRig armature
@@ -31,14 +32,17 @@ In the **View3d Tools Panel** you will find all the animation controls. In the *
 You can find more information at https://cloud.blender.org/p/blenrig/
 
 
+
 Don't forget to check the **Introduction Guide** here
 
 https://cloud.blender.org/p/blenrig/56966411c379cf44546120e8
 
 
+
 Also check Vincent's Timelapse to have a quick guide about the complete rigging process of a character:
 
 https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc
+
 
 
 For a detailed step by step tutorial, check the BlenRig Tutorials section at the Blender Cloud (Subscription required)
@@ -61,15 +65,16 @@ In this type of computer most rigged high resolution characters will run at 35+ 
 
 
 
+
 ####################
-BlenRig 5 What's new
+WHAT'S NEW
 ####################
 
 
 V 1.001
 =======
 
-    01- Biped Armature updated to 1.001, fix IK torso bug
+    - Biped Armature updated to 1.001, fix IK torso bug
 
 
 V 1.002
