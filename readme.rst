@@ -10,7 +10,7 @@ BlenRig 5 Rigging System for Blender
 BlenRig is an Auto-rigging and skinning system that provides the user of a Feature Film quality rig (including an advanced facial system).
 
 The current version only supports Biped characters, but more presets will be supported in the near future.
-
+.
 
 Rig creation includes:
 
@@ -19,7 +19,7 @@ _BlenRig armature
 _BlenRig Mesh Deform cage and Lattices
 
 _Basic body mesh for creating low resolution proxy versions of the characters.
-
+.
 
 Usage
 =====
