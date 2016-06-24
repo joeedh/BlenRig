@@ -2,12 +2,13 @@
 BlenRig 5 What's new
 ####################
 
-** V 1.001 **
+
+**V 1.001**
 
     -Biped Armature updated to 1.001, fix IK torso bug
 
 
-** V 1.002 **
+**V 1.002**
 
     - General changes:
 
@@ -32,5 +33,3 @@ BlenRig 5 What's new
         - Fix for timeline scrubbing slowdown bug
         
         - Fix for error when adding BlenRig to the scene while using local view or local layers
-        
-    

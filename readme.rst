@@ -53,16 +53,19 @@ In this type of computer a high resolution character will roughly reach 24 fps.
 In this type of computer most rigged high resolution characters will run at 35+ fps. Low resolution proxy versions may run at 50+ fps.
 
 
+
+
 ####################
 BlenRig 5 What's new
 ####################
 
-** V 1.001 **
+
+**V 1.001**
 
     -Biped Armature updated to 1.001, fix IK torso bug
 
 
-** V 1.002 **
+**V 1.002**
 
     - General changes:
 
