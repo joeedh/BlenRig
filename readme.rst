@@ -32,7 +32,7 @@ You can find more information at https://cloud.blender.org/p/blenrig/
 
 Don't forget to check the `Introduction Guide <https://cloud.blender.org/p/blenrig/56966411c379cf44546120e8>`_
 
-Also check `Vincent's Timelapse <https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc>`_ to have a quick guide about the complete process of rigging a character:
+Also check `Vincent's Timelapse <https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc>`_ to have a quick guide about the complete process of rigging a character
 
 
 
