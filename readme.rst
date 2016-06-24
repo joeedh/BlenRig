@@ -17,6 +17,7 @@ _BlenRig Mesh Deform cage and Lattices
 
 _Basic body mesh for creating low resolution proxy versions of the characters.
 
+
 Usage
 =====
 
@@ -25,6 +26,19 @@ You will find the rig in the **Object Add Panel**, under the **Armature Menu**.
 In the **View3d Tools Panel** you will find all the animation controls. In the **Armature Data Panel** you will find all the rigging related tools.
 
 You can find more information at https://cloud.blender.org/p/blenrig/
+
+Don't forget to check the **Introduction Guide** here:
+
+**https://cloud.blender.org/p/blenrig/56966411c379cf44546120e8**
+
+Also check Vincent's Timelapse to have a quick guide about the complete rigging process of a character:
+
+**https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc**
+
+For a detailed step by step tutorial, check the BlenRig Tutorials section at the Blender Cloud (Subscription required)
+
+**https://cloud.blender.org/p/blenrig/56e2fdafc379cf26b1cd8595**
+
 
 
 System Requirements for animation:  
@@ -37,3 +51,41 @@ In this type of computer a high resolution character will roughly reach 24 fps.
 **Recommended Processor spec:** Intel i7 or AMD equivalent. 
 
 In this type of computer most rigged high resolution characters will run at 35+ fps. Low resolution proxy versions may run at 50+ fps.
+
+
+####################
+BlenRig 5 What's new
+####################
+
+** V 1.001 **
+
+    -Biped Armature updated to 1.001, fix IK torso bug
+
+
+** V 1.002 **
+
+    - General changes:
+
+        - New Layer Scheme option in Layer Settings tab (Compact and Expanded Scheme)
+    
+        - Updated version of generate_customprops script to work with the new armature layer schemes      
+
+    - Biped Armature updated to 1.005:
+        
+        - Fixed shoulder offset when using FK and Hinge in arms
+        
+        - Removed Rotation locks in forearm and shin FK controllers
+        
+        - New lattice_eye_L and R controller in TOON 2 layer
+        
+        - Look_l and R scaling now makes the eye scale with the Lattice of the eye, giving a smoother result
+        
+        _ Various bone layers and bone shapes fixes
+        
+    - Bug Fixes:
+       
+        - Fix for timeline scrubbing slowdown bug
+        
+        - Fix for error when adding BlenRig to the scene while using local view or local layers
+        
+    
