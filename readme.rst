@@ -29,15 +29,15 @@ You can find more information at https://cloud.blender.org/p/blenrig/
 
 Don't forget to check the **Introduction Guide** here:
 
-**https://cloud.blender.org/p/blenrig/56966411c379cf44546120e8**
+https://cloud.blender.org/p/blenrig/56966411c379cf44546120e8
 
 Also check Vincent's Timelapse to have a quick guide about the complete rigging process of a character:
 
-**https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc**
+https://cloud.blender.org/p/blenrig/57343500c379cf109d9e4ecc
 
 For a detailed step by step tutorial, check the BlenRig Tutorials section at the Blender Cloud (Subscription required)
 
-**https://cloud.blender.org/p/blenrig/56e2fdafc379cf26b1cd8595**
+https://cloud.blender.org/p/blenrig/56e2fdafc379cf26b1cd8595
 
 
 
@@ -60,12 +60,14 @@ BlenRig 5 What's new
 ####################
 
 
-**V 1.001**
+V 1.001
+=======
 
     -Biped Armature updated to 1.001, fix IK torso bug
 
 
-**V 1.002**
+V 1.002
+=======
 
     - General changes:
 
