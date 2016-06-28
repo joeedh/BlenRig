@@ -86,7 +86,7 @@ V 1.002
         
         - Look_l and R scaling now makes the eye scale with the Lattice of the eye, giving a smoother result
         
-        _ Various bone layers and bone shapes fixes
+        - Various bone layers and bone shapes fixes
         
     - Bug Fixes:
        
