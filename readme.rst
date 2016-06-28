@@ -74,7 +74,9 @@ V 1.002
 
         - New Layer Scheme option in Layer Settings tab (Compact and Expanded Scheme)
     
-        - Updated version of generate_customprops script to work with the new armature layer schemes      
+        - Updated version of generate_customprops script to work with the new armature layer schemes
+        
+        - New Armature UPDATE button (to update the user's rig with the latest improvements)
 
     - Biped Armature updated to 1.005:
         
