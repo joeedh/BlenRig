@@ -61,13 +61,13 @@ WHAT'S NEW
 ####################
 
 
-V 1.001
+V 1.01
 =======
 
     - Biped Armature updated to 1.001, fix IK torso bug
 
 
-V 1.002
+V 1.02
 =======
 
     - General changes:
