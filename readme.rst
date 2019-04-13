@@ -26,7 +26,7 @@ Usage
 
 You will find the rig in the **Object Add Panel**, under the **Armature Menu**.
 
-In the **View3d N Panel** you will find all the animation controls. In the **Armature Data Panel** you will find all the rigging related tools.
+In the **View3d Sidebar** you will find all the animation controls. In the **Armature Data Panel** you will find all the rigging related tools.
 
 You can find more information at https://cloud.blender.org/p/blenrig/
 
