@@ -273,7 +273,7 @@ class ARMATURE_OT_armature_baker(bpy.types.Operator):
         bpy.ops.object.mode_set(mode='OBJECT')
         old_active = bpy.context.active_object
         old_selected = bpy.context.selected_objects
-        old_visible_collections = [coll.name for coll in bpy.context.view_layer.layer_collection.children if coll.hide_instance == False  ]
+        old_visible_collections = [coll.name for coll in bpy.context.view_layer.layer_collection.children if coll.hide_viewport == False  ]
         for ob in old_selected:
             ob.select_set(False)
 
@@ -291,7 +291,7 @@ class ARMATURE_OT_armature_baker(bpy.types.Operator):
                                 deformers_collection.append(coll.name)
                     for coll in bpy.context.view_layer.layer_collection.children:
                         if coll.name in deformers_collection:
-                            coll.hide_instance = False
+                            coll.hide_viewport = False
                     ob.select_set(True)
                     parent_pairs.append([ob, ob.parent, ob.parent_bone])
                     bpy.ops.object.parent_clear(type='CLEAR_KEEP_TRANSFORM')
@@ -350,10 +350,10 @@ class ARMATURE_OT_armature_baker(bpy.types.Operator):
             ob.select_set(False)
         #Set to visible collections back    
         for coll in bpy.context.view_layer.layer_collection.children:
-            coll.hide_instance = True
+            coll.hide_viewport = True
         for coll in bpy.context.view_layer.layer_collection.children:
             if coll.name in old_visible_collections:
-                coll.hide_instance = False
+                coll.hide_viewport = False
         bpy.context.view_layer.objects.active = old_active
         for ob in old_selected:
             ob.select_set(True)                         
