@@ -29,7 +29,7 @@ class Operator_BlenRig5_Add_Biped(bpy.types.Operator):
             scene.collection.children.link(collection)
         for coll in collection.children:
             if coll.name in hide_collections:
-                coll.hide_instance = True
+                coll.hide_viewport = True
                 #Context Override 
                 #areas  = [area for area in bpy.context.screen.areas if area.type == 'OUTLINER']
 
