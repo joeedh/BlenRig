@@ -95,8 +95,7 @@ class ARMATURE_OT_mesh_pose_baker(bpy.types.Operator):
                    
                             
         # Remove unused baked mesh               
-        bpy.data.meshes.remove(mesh)                         
-        
+        ob.to_mesh_clear()
         bpy.context.view_layer.objects.active = old_ob
                
         
